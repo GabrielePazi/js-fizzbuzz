@@ -11,21 +11,21 @@ for (let i = 1; i <= 100; i++) {
     //assegna classe con colore e il contenuto FizzBuzz
     singleSquare.classList.add('bg-danger')
     singleSquare.innerHTML = "FizzBuzz"
+  } else if (i % 3 == 0) {
+    //assegna classe con colore e il contenuto Fizz
+    singleSquare.classList.add('bg-success')
+    singleSquare.innerHTML = "Fizz"
+  } else if (i % 5 == 0) {
+    //assegna classe con colore e il contenuto Buzz      
+    singleSquare.classList.add('bg-warning')
+    singleSquare.innerHTML = "Buzz"
   } else {
-    if (i % 3 == 0) {
-      //assegna classe con colore e il contenuto Fizz
-      singleSquare.classList.add('bg-success')
-      singleSquare.innerHTML = "Fizz"
-    } else if (i % 5 == 0) {
-      //assegna classe con colore e il contenuto Buzz      
-      singleSquare.classList.add('bg-warning')
-      singleSquare.innerHTML = "Buzz"
-    } else {
-      //assegna classe con colore e il valore dell'indice      
-      singleSquare.classList.add('bg-primary')
-      singleSquare.innerHTML = i.toString()
-    }
+    //assegna classe con colore e il valore dell'indice      
+    singleSquare.classList.add('bg-primary')
+    singleSquare.innerHTML = i.toString()
   }
-  //appende la singola cella al padre se no non si vede
-  fizzBuzzContainer.append(singleSquare)
-}
+
+    //appende la singola cella al padre se no non si vede
+    fizzBuzzContainer.append(singleSquare)
+  }
+  
