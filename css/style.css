@@ -7,3 +7,12 @@
 .bg-dark-blue {
   background-color: rgb(8, 59, 76);
 }
+
+.square {
+  width: calc(100% / 8);
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
